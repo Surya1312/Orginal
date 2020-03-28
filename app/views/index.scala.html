@@ -1,15 +1,24 @@
 @(signedRequestJson: String)
 
 @main("Salesforce Canvas Seed") {
-    <script>
-        var signedRequestJson = @Html(signedRequestJson);
-    </script>
-    <script src="@routes.Assets.at("lib/SalesforceCanvasJavascriptSDK/js/canvas-all.js")"></script>
-    <script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"></script>
+<script>
+    var signedRequestJson = @Html(signedRequestJson);
+</script>
+<script src="@routes.Assets.at(" lib/SalesforceCanvasJavascriptSDK/js/canvas-all.js")"></script>
+<script src="@routes.Assets.at(" javascripts/index.js")" type="text/javascript"></script>
 
-    <h1>Hello <span id='username'></span></h1>
-    The BU of this opportunity is <span id='bu'></span>
-    The Opportunity Number is <span id='oppNo'></span>
-    <a href="https://ssrs-dev.usgboral.com/ReportServer/Pages/ReportViewer.aspx?/OpportunitySQLDW&BU=IN&OpportunityNumber=OPP-285261&rs:Command=Render">Click to load Repots</a>
+<h1>Hello <span id='username'></span></h1>
+<P>
+    The BU of this opportunity is <span id='bu'></span> <br />
+    The Opportunity Number is <span id='oppNo'></span><br />
+    The Estimate Supply Date is <span id='est'></span><br />
+    The Stage type is <span id='stageType'></span><br />
+    The Record Type is <span id='rec'></span><br />
+    The PH4 Migration flag is <span id='ph4'></span><br />
+    The url to call is <span id='urltocall'></span>
+</P>
+
+<a href="https://ssrs-dev.usgboral.com/ReportServer/Pages/ReportViewer.aspx?/OpportunitySQLDW&BU=IN&OpportunityNumber=OPP-285261&rs:Command=Render"
+    target="_top">Click to load Repots</a>
 
 }

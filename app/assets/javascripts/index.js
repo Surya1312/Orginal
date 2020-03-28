@@ -9,4 +9,5 @@ Sfdc.canvas(function() {
   Sfdc.canvas.oauth.token(window.signedRequestJson.oauthToken);
   Sfdc.canvas.byId('username').innerHTML = window.signedRequestJson.context.user.fullName;
   Sfdc.canvas.byId('bu').innerHTML = window.signedRequestJson.context.environment.parameters.bucode;
+  Sfdc.canvas.byId('oppNo').innerHTML = window.signedRequestJson.context.environment.parameters.oppNumber;
 });
